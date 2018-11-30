@@ -1,0 +1,14 @@
+.page-selector {
+  text-align: center;
+}
+div ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  flex-direction: row;
+}
+
+li {
+  margin: 10px;
+  flex-direction: row;
+}
