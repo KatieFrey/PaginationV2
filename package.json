@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode development --watch",
-    "build": "webpack --mode production"
+    "start": "webpack --mode development && webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,8 @@
   "homepage": "https://github.com/KatieFrey/PaginationV2#readme",
   "devDependencies": {
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "axios": "^0.18.0"
