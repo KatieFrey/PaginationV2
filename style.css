@@ -13,20 +13,12 @@ button {
   font-weight: 300;
   color: #000000;
   text-align: center;
-  transition: all 0.2s;
 }
 
 button:hover {
   color: #ffffff;
   background-color: #000000;
 }
-
-/* @media all and (max-width:30em){
-   .page-selector input{
-    display: block;
-    margin: 0.4em auto;
-   }
-  } */
 
 div ul {
   display: grid;
