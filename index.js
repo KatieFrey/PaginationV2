@@ -88,6 +88,12 @@ function append(parent, newElement) {
   return parent.appendChild(newElement);
 }
 
+function openModal(url) {
+  console.log("element: ", url);
+  document.getElementById("img01").src = url;
+  document.getElementById("modal01").style.display = "block";
+}
+
 function renderList() {
   let ul = document.getElementById("list");
   ul.innerHTML = "";
@@ -97,6 +103,8 @@ function renderList() {
       img = createNode("img");
 
     img.src = currentEl;
+    img.addEventListener("click", () => openModal(currentEl));
+
     append(li, img);
     append(ul, li);
   });
